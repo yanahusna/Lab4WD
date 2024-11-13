@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqueon QuietFlow 200</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #e0f7fa;
+        }
+
+        .main {
+            padding: 20px;
+            margin-left: 250px;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #004d40;
+            padding-top: 16px;
+            overflow-y: auto;
+            color: #a7ffeb;
+        }
+
+        .sidebar a {
+            padding: 8px 16px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #a7ffeb;
+            display: block;
+            font-weight: 500;
+        }
+
+        .sidebar a:hover {
+            color: #e0f7fa;
+        }
+
+        /* Product Details Styling */
+        .product-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: #004d40;
+        }
+
+        .product-image {
+            width: 400px;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .product-name {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .product-description, .product-price, .product-details {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .add-to-cart {
+            background-color: #004d40;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .add-to-cart:hover {
+            background-color: #00796b;
+        }
+    </style>
+</head>
+<body>
+
+<div class="sidebar">
+    <a href="index.html">Home</a>
+    <a href="plants.html">Aqua Plants</a>
+    <a href="lights.html">Aqua Lights</a>
+    <a href="filters.html">Aqua Filter</a>
+    <a href="supplements.html">Aqua Supplement</a>
+    <a href="oxygen.html">Aqua Oxygen Pump</a>
+</div>
+
+<div class="main">
+    <div class="product-container">
+        <h1 class="product-name">Aqueon QuietFlow 200</h1>
+        <img src="filter1.jpg" alt="Aqueon QuietFlow 200" class="product-image">
+        <p class="product-price">Price: RM 49.99</p>
+        <p class="product-description">The Aqueon QuietFlow 200 is a powerful yet silent filter that keeps your aquarium clean and clear, ensuring a healthy environment for your aquatic life.</p>
+        
+        <h2>Product Details</h2>
+        <ul class="product-details">
+            <li>Flow Rate: 200 GPH</li>
+            <li>Ideal for tanks up to 50 gallons</li>
+            <li>Four-stage filtration for superior water quality</li>
+            <li>Ultra-quiet operation</li>
+            <li>Easy installation and maintenance</li>
+        </ul>
+
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+</body>
+</html>

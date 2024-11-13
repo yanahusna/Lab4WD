@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aqua Lights</title>
+<style>
+    /* Reuse General and Sidebar Styling */
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        background-color: #e0f7fa;
+    }
+
+    .sidebar {
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #004d40;
+        padding-top: 16px;
+        color: #a7ffeb;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .company-name {
+        color: #a7ffeb;
+        font-size: 20px;
+    }
+
+    .sidebar a {
+        padding: 8px 16px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #a7ffeb;
+        display: block;
+    }
+
+    .sidebar a:hover {
+        color: #e0f7fa;
+    }
+
+    .main {
+        margin-left: 250px;
+        padding: 20px;
+    }
+
+    /* Section Styling */
+    .section-heading {
+        color: #004d40;
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .section-description {
+        color: #333;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Product Grid */
+    .product-grid {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .product-box {
+        background-color: #e0f2f1;
+        width: 300px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .product-box:hover {
+        transform: scale(1.05);
+    }
+
+    .product-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .product-name {
+        color: #004d40;
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .product-description {
+        color: #333;
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    .product-price {
+        color: #00796b;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+
+    .view-details {
+        background-color: #004d40;
+        color: white;
+        padding: 10px 15px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .view-details:hover {
+        background-color: #00796b;
+    }
+</style>
+</head>
+<body>
+
+<!-- Sidebar with Links -->
+<div class="sidebar">
+    <div class="logo-container">
+        <img src="logo.png" alt="Logo" class="logo">
+        <h2 class="company-name">AquaNature</h2>
+    </div>
+    <a href="index.html">Home</a>
+    <a href="plants.html">Aqua Plants</a>
+    <a href="lights.html">Aqua Lights</a>
+    <a href="filters.html">Aqua Filter</a>
+    <a href="supplements.html">Aqua Supplement</a>
+    <a href="oxygen.html">Aqua Oxygen Pump</a>
+</div>
+
+<!-- Main Content -->
+<div class="main">
+    <h1 class="section-heading">Our Aqua Lights</h1>
+    <p class="section-description">Illuminate your aquarium with our high-quality lighting solutions.</p>
+    
+    <div class="product-grid">
+        <!-- Product 1 -->
+        <div class="product-box">
+            <img src="lights2.jpg" alt="6700k Simulated Sunlight UV" class="product-image">
+            <h3 class="product-name">6700k Simulated Sunlight UV</h3>
+            <p class="product-description">This light mimics natural sunlight, promoting plant growth.</p>
+            <p class="product-price">RM59.99</p>
+            <button class="view-details" onclick="window.location.href='product1.html'">View Details</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-box">
+            <img src="lights3.jpg" alt="AquaLighter 60 cm" class="product-image">
+            <h3 class="product-name">AquaLighter 60 cm</h3>
+            <p class="product-description">Designed for tanks up to 60 cm, with optimal brightness.</p>
+            <p class="product-price">RM39.99</p>
+            <button class="view-details" onclick="window.location.href='product2.html'">View Details</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-box">
+            <img src="lights1.jpg" alt="EverGrow Lights (using remote)" class="product-image">
+            <h3 class="product-name">EverGrow Lights (using remote)</h3>
+            <p class="product-description">Control your lighting with ease and multiple settings.</p>
+            <p class="product-price">RM49.99</p>
+            <button class="view-details" onclick="window.location.href='product3.html'">View Details</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

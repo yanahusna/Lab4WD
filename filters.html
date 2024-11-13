@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqua Filters - AquaNature</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #e0f7fa;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #004d40;
+            padding-top: 16px;
+            overflow-y: auto;
+            color: #a7ffeb;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .company-name {
+            color: #a7ffeb;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .sidebar a {
+            padding: 8px 16px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #a7ffeb;
+            display: block;
+            font-weight: 500;
+        }
+
+        .sidebar a:hover {
+            color: #e0f7fa;
+        }
+
+        .main {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        .section-heading {
+            color: #004d40;
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .section-description {
+            color: #333;
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Product Grid */
+        .product-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .product-box {
+            background-color: #e0f2f1;
+            width: 300px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .product-box:hover {
+            transform: scale(1.05);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .product-name {
+            color: #004d40;
+            font-size: 20px;
+            margin: 10px 0 5px;
+        }
+
+        .product-description {
+            color: #333;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+
+        .product-price {
+            color: #00796b;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .view-details {
+            background-color: #004d40;
+            color: white;
+            padding: 10px 15px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .view-details:hover {
+            background-color: #00796b;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <div class="logo-container">
+        <img src="logo.png" alt="Logo" class="logo">
+        <h2 class="company-name">AquaNature</h2>
+    </div>
+    <a href="index.html">Home</a>
+    <a href="plants.html">Aqua Plants</a>
+    <a href="lights.html">Aqua Lights</a>
+    <a href="filters.html">Aqua Filter</a>
+    <a href="supplements.html">Aqua Supplement</a>
+    <a href="oxygen.html">Aqua Oxygen Pump</a>
+</div>
+
+<!-- Main Content -->
+<div class="main">
+    <h1 class="section-heading">Our Aqua Filters</h1>
+    <p class="section-description">Explore our collection of high-quality filters for your aquatic environment.</p>
+    
+    <div class="product-grid">
+        <div class="product-box">
+            <img src="filter1.jpg" alt="Aqueon QuietFlow 200" class="product-image">
+            <h3 class="product-name">Aqueon QuietFlow 200</h3>
+            <p class="product-description">Powerful and silent filter for crystal-clear water.</p>
+            <p class="product-price">RM 49.99</p>
+            <a href="aqueon_quietflow.html" class="view-details">View Details</a>
+        </div>
+
+        <div class="product-box">
+            <img src="filter2.jpg" alt="Fluval Filter" class="product-image">
+            <h3 class="product-name">Fluval Filter</h3>
+            <p class="product-description">Efficient and reliable for a healthy fish habitat.</p>
+            <p class="product-price">RM 59.99</p>
+            <a href="fluval_filter.html" class="view-details">View Details</a>
+        </div>
+
+        <div class="product-box">
+            <img src="filter3.jpg" alt="BOSS Filter" class="product-image">
+            <h3 class="product-name">BOSS Filter</h3>
+            <p class="product-description">Advanced filtration technology for optimal clarity.</p>
+            <p class="product-price">RM 39.99</p>
+            <a href="boss_filter.html" class="view-details">View Details</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

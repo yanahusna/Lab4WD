@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqua Plants</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #e0f7fa; /* Light aqua background */
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #004d40; /* Deep teal for aquatic feel */
+            padding-top: 16px;
+            overflow-y: auto;
+            color: #a7ffeb;
+        }
+
+        /* Logo and Company Name Container */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .company-name {
+            color: #a7ffeb;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .sidebar a {
+            padding: 8px 16px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #a7ffeb;
+            display: block;
+            font-weight: 500;
+        }
+
+        .sidebar a:hover {
+            color: #e0f7fa;
+        }
+
+        .main {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        /* Section Heading */
+        .section-heading {
+            color: #004d40;
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .section-description {
+            color: #333;
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Product Grid Layout */
+        .product-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        /* Individual Product Box */
+        .product-box {
+            background-color: #e0f2f1;
+            width: 300px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .product-box:hover {
+            transform: scale(1.05);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .product-name {
+            color: #004d40;
+            font-size: 20px;
+            margin: 10px 0 5px;
+        }
+
+        .product-description {
+            color: #333;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+
+        .product-price {
+            color: #00796b;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .add-to-cart {
+            background-color: #004d40;
+            color: white;
+            padding: 10px 15px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-cart:hover {
+            background-color: #00796b;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Sidebar with Logo and Categories -->
+<div class="sidebar">
+    <div class="logo-container">
+        <img src="logo.png" alt="Logo" class="logo">
+        <h2 class="company-name">AquaNature</h2>
+    </div>
+    <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="plants.html">Aqua Plants</a>
+    <a href="lights.html">Aqua Lights</a>
+    <a href="filters.html">Aqua Filter</a>
+    <a href="supplements.html">Aqua Supplement</a>
+    <a href="oxygen.html">Aqua Oxygen Pump</a>
+</div>
+
+<!-- Main Content -->
+<div class="main">
+    <h1 class="section-heading">Our Aqua Plants</h1>
+    <p class="section-description">Explore our collection of beautiful aquatic plants.</p>
+    
+    <div class="product-grid">
+        <!-- Product 1 -->
+        <div class="product-box">
+            <img src="plants1.jpg" alt="Product 1" class="product-image">
+            <h3 class="product-name">Red Floater</h3>
+            <p class="product-description">Red Floater is a beautiful floating aquatic plant known for its striking red to purple leaves. It is often used to add color and texture to aquariums or ponds.</p>
+            <p><strong>Care Requirements:</strong></p>
+            <ul>
+                <li>Light: Medium to high light (at least 8-12 hours per day).</li>
+                <li>Temperature: 20-28°C (68-82°F).</li>
+                <li>pH Level: 6.0 to 7.5.</li>
+                <li>Fertilization: Use a liquid fertilizer every two weeks for best growth.</li>
+            </ul>
+            <p class="product-price">RM 12.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-box">
+            <img src="plants2.jpg" alt="Product 2" class="product-image">
+            <h3 class="product-name">Hornwort</h3>
+            <p class="product-description">Hornwort is a hardy, submerged plant that provides excellent cover and oxygenation for your aquatic environment.</p>
+            <p><strong>Price:</strong> RM 10.00</p>
+            <p><strong>Care Requirements:</strong></p>
+            <ul>
+                <li>Light: Low to moderate light.</li>
+                <li>Temperature: 15-28°C (59-82°F).</li>
+                <li>pH Level: 6.0 to 7.5.</li>
+                <li>Fertilization: Minimal, but adding CO2 can enhance growth.</li>
+            </ul>
+            <p class="product-price">RM 12.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-box">
+            <img src="plants3.jpg" alt="Product 3" class="product-image">
+            <h3 class="product-name">Java Moss</h3>
+            <p class="product-description">Java Moss is a versatile moss perfect for creating a natural look in your aquarium while offering shelter for fish and shrimp.</p>
+            <p><strong>Care Requirements:</strong></p>
+            <ul>
+                <li>Light: Low to moderate light.</li>
+                <li>Temperature: 20-28°C (68-82°F).</li>
+                <li>pH Level: 5.0 to 8.0.</li>
+                <li>Fertilization: Fertilization is not strictly necessary, but liquid fertilizers can promote growth.</li>
+            </ul>
+            <p class="product-price">RM 15.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

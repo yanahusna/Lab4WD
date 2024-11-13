@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti-Parasite - AquaNature</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #e0f7fa;
+        }
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #004d40;
+            padding-top: 16px;
+            overflow-y: auto;
+            color: #a7ffeb;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        .logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .company-name {
+            color: #a7ffeb;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .sidebar a {
+            padding: 8px 16px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #a7ffeb;
+            display: block;
+            font-weight: 500;
+        }
+        .sidebar a:hover {
+            color: #e0f7fa;
+        }
+        .main {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        .product-container {
+            text-align: center;
+            color: #004d40;
+        }
+        .product-image {
+            width: 400px;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .product-name {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .product-description, .product-price {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0;
+        }
+        .add-to-cart {
+            background-color: #004d40;
+            color: white;
+            padding: 10px 15px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .add-to-cart:hover {
+            background-color: #00796b;
+        }
+    </style>
+</head>
+<body>
+
+<div class="sidebar">
+    <div class="logo-container">
+        <img src="logo.png" alt="Logo" class="logo">
+        <h2 class="company-name">AquaNature</h2>
+    </div>
+    <a href="index.html">Home</a>
+    <a href="plants.html">Aqua Plants</a>
+    <a href="lights.html">Aqua Lights</a>
+    <a href="filters.html">Aqua Filter</a>
+    <a href="supplements.html">Aqua Supplement</a>
+    <a href="oxygen.html">Aqua Oxygen Pump</a>
+</div>
+
+<div class="main">
+    <div class="product-container">
+        <img src="supplement2.jpg" alt="Anti-Parasite" class="product-image">
+        <h1 class="product-name">Anti-Parasite</h1>
+        <p class="product-description">Effectively combats a wide range of parasites that can affect your aquatic pets, promoting a healthy environment.</p>
+        <p class="product-price">RM 12.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+</body>
+</html>
